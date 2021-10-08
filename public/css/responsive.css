@@ -1,0 +1,82 @@
+@media screen and (max-width: 430px) {
+    html, body { font-size: 10px; }
+    .head-item-1{
+        margin-top: 9%;
+        height: 100%;
+        width: 75%;
+        top: 0;
+        padding:6%;
+        position: fixed;
+        z-index: 1;
+        overflow: hidden;
+        left: 0;
+      }
+      
+      .head-item-1 h1{
+
+        font-weight: bolder;
+        color: red;
+      }
+      
+      .head-item-1 button{
+        background-color:red;
+        border-top-right-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        border-top-left-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+        font-weight: bolder;
+        padding: 1%;
+        margin:3%;
+        text-align: center;
+        width: 18rem;
+        font-size: small;
+      }
+      
+      .head-item-1 button a{
+        color:black;
+       text-decoration: none;
+      }
+      
+      .head-item-1 button a:hover{
+       color: whitesmoke;
+      }
+      
+      .head-item-2{
+        height: 100%;
+        width: 25%;
+        top: 0;
+        background-color:red;
+        padding:3%;
+        position: fixed;
+        z-index: 1;
+        overflow: hidden;
+        right: 0;
+      }
+      
+      .head-item-img{
+        z-index: 10000;
+        height: 15rem;
+        width: 15rem;
+        border-radius: 100%;
+        position: fixed;
+        margin-top: 86%;
+        margin-left: 58%;
+      }
+        
+}
+
+@media screen and (max-width: 800px) {
+    html, body { font-size: 14px; }
+      
+      .head-item-img{
+        z-index: 10000;
+        height: 16rem;
+        width: 16rem;
+        border-radius: 100%;
+        position: fixed;
+        margin-top: 19%;
+        margin-left: 65%;
+      }
+        
+}
+
