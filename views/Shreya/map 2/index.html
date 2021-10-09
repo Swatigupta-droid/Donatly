@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Accross the Globe</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <style>
+        .map{
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <centre>
+        <h1>Our donars accross the Globe</h1>
+        <div class="map" id="map"></div>
+    </centre>
+    <script>
+        var map;
+        var InforObj = [];
+        var centerCords = {
+            lat: 22.654257,
+            lng: 88.439802
+        }; 
+
+        var icons = {
+        donar: {
+            icon: 'fas fa-map-marker-alt'
+        }
+        };
+
+        var markersOnMap = [
+            {
+                LatLng: [{
+                    lat: 22.654257,
+                    lng: 88.439802
+                }],
+                type: 'donar'
+            },
+            {
+                LatLng: [{
+                    lat: 28.704060,
+                    lng: 77.102493
+                }],
+                type: 'donar' 
+            },
+            {
+                LatLng: [{
+                    lat: 19.075983,
+                    lng: 72.877655
+                }],
+                type: 'donar'
+            },
+            {
+                LatLng: [{
+                    lat: 12.971599,
+                    lng: 77.594566
+                }],
+                type: 'donar'
+            }
+        ]
+
+        window.onload = function() {
+            initMap();
+        };
+
+        function addMarkerInfo() {
+            for(var i = 0; i<markersOnMap.length; i++){
+                const marker = new google.maps.Marker({
+                    position: markersOnMap[i].LatLng[0],
+                    icon: icon[markersOnMap[i].type].icon,
+                    map: map
+                })
+            }
+        }
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'),{
+                zoom : 15,
+                center: centerCords
+            }); 
+            addMarkerInfo();  
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Dh1o0e6sdthQJ52Y0RGk0iFQVhgbq9M&callback=initMap&v=weekly">
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
