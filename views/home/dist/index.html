@@ -14,6 +14,7 @@
 <script src="script.js"></script>
 <body>
 <!-- partial:index.partial.html -->
+
 <div class='ripple-background'>
   <div class='circle xxlarge shade1'></div>
   <div class='circle xlarge shade2'></div>
@@ -21,14 +22,18 @@
   <div class='circle mediun shade4'></div>
   <div class='circle small shade5'></div>
 </div>
+
 <section>
   <div class="icon">
     <img src="icon.jpg" alt="icon" style="height: 60px;">
   </div>
+
+  <!-- navbar -->
+
   <div class="navbar">
     <a href="#">Home</a>
-    <div class="dropdown">
-      <button class="dropbtn1" onclick="myFunction()">Banks<i class="fa fa-caret-down"></i></button>
+    <div class="dropdown ">
+      <button class="dropbtn1" onmouseover="myFunction()">Banks<i class="fa fa-caret-down"></i></button>
       <div class="content1" id="myDropdown">
         <a href="#">Blood Bank</a>
         <a href="#">Hospital</a>
@@ -36,7 +41,7 @@
       </div>
     </div>
     <div class="dropdown">
-      <button class="dropbtn" onclick="myFunction1()">Events and News<i class="fa fa-caret-down"></i></button>
+      <button class="dropbtn" onmouseover="myFunction1()">Events and News<i class="fa fa-caret-down"></i></button>
       <div class="content1" id="myDropdown1">
         <a href="#">Register your camp</a>
         <a href="#">Find camps near you</a>
@@ -45,7 +50,7 @@
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn2" onclick="myFunction2()">More..<i class="fa fa-caret-down"></i></button>
+      <button class="dropbtn2" onmouseover="myFunction2()">More..<i class="fa fa-caret-down"></i></button>
       <div class="content1" id="myDropdown2">
         <a href="#">About Us</a>
         <a href="#">Test your fitness</a>
@@ -70,9 +75,9 @@
       Iure consequatur quis praesentium incidunt architecto aut ipsam illum quasi non, 
       voluptate dolorem quisquam nemo facere maxime eligendi aliquam, blanditiis 
       reprehenderit aperiam.</p>
-  <button type="button">Donor</button>
-  <button type="button">Recipient</button>
-  <button type="button">Read More..</button>
+  <button class="btn" type="button">Donor</button>
+  <button class="btn" type="button">Recipient</button>
+  <button class="btn" type="button">Read More..</button>
   </div>
  
   
