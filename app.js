@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 // ADD your Username and Password for mongoDB Atlas then
-mongoose.connect("mongodb+srv://admin-"+env.process.DB_NAME + ":" + env.process.DB_PASS + "abhi@cluster0.4ady3.mongodb.net/blogDB?retryWrites=true&w=majority", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin-"+process.env.DB_NAME + ":" + process.env.DB_PASS + "abhi@cluster0.4ady3.mongodb.net/DonatelyDB?retryWrites=true&w=majority", {useNewUrlParser: true});
 
 
 
@@ -32,7 +32,7 @@ const Contact = mongoose.model("Contact", contactSchema);
 
 
 app.get("/",function(req,res){
-  res.render("start");
+  res.render("./home/index.ejs");
 });
 
 app.get("/home", function(req, res){
