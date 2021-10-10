@@ -1,0 +1,193 @@
+.bb{
+  background-color:whitesmoke;
+}
+.item{
+  background-color:#e95757;
+  text-align: center;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+section
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
+  padding-top: 5px;
+  background-color: #e95757;
+}
+.icon
+{
+  margin-left: 15px;
+}
+.login
+{
+  margin-right: 15px;
+}
+.login a{
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  padding: 5px;
+  margin: 5px;
+}
+
+.navbar
+{
+  overflow: hidden;
+  font-family: 'raleway',sans-serif;
+  background-color: #e95757;
+}
+.navbar a
+{
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.dropdown
+{
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn,.dropdown .dropbtn1 ,.dropdown .dropbtn2
+{
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover
+.dropbtn, .dropbtn:focus,.dropbtn1,.dropbtn1:focus,.dropbtn2,.dropbtn2:focus
+{
+  background-color:white;
+  color: #111111;
+}
+.content1
+{
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.content1 a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.content1 a:hover
+{
+  background-color: #e68ba0;
+}
+.dropdown:hover .content1
+{
+  display: block;
+}
+.show
+{
+  display: block;
+}
+
+body{
+  margin:0;
+  padding:0;
+}
+.header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway',sans-serif;
+  opacity: 0.9;
+}
+header
+{
+  margin-top: 20px;
+  text-align: center;
+}
+h1{
+ color:#fff;
+ margin-bottom: 70px; 
+ font-size: 45px;
+ letter-spacing: 2px;
+ text-align: center;
+}
+.search-field{
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+}
+.Country{
+  width: 400px;
+}
+.State{
+  width: 200px;
+}
+.search-btn{
+  height:50px;
+  width:150px;
+  background:#fff;
+  border:none;
+  color:#000;
+  border-radius:25px;
+}
+.search-btn:hover{
+  background: #fff;
+  cursor: pointer;
+}
+.news
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px;
+  justify-content: space-around;
+}
+.box
+{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-color: #e95757;
+}
+.img img{
+  width: 330px;
+  margin-left: 15px;
+  height: 200px;
+}
+.description h3
+{
+  font-size: 20px;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin:10px;
+}

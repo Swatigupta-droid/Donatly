@@ -1,0 +1,150 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Donations</title>
+    <link rel="stylesheet" type="text/css" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/donations.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="/js/donations.js"></script>
+</head>
+<body>
+
+  <section class="sec">
+    <div class="icon">
+      <img src="../images/logo.png" alt="icon" style="height: 60px;">
+    </div>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <div class="dropdown ">
+      <button class="dropbtn1" onmouseover="myFunction()">Banks<i class="fa fa-caret-down"></i></button>
+      <div class="content1" id="myDropdown">
+        <a href="#">Blood Bank</a>
+        <a href="#">Hospital</a>
+        <a href="#">Organ Bank</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onmouseover="myFunction1()">Events and News<i class="fa fa-caret-down"></i></button>
+      <div class="content1" id="myDropdown1">
+        <a href="#">Register your camp</a>
+        <a href="#">Find camps near you</a>
+        <a href="#">News</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn2" onmouseover="myFunction2()">More..<i class="fa fa-caret-down"></i></button>
+      <div class="content1" id="myDropdown2">
+        <a href="#">About Us</a>
+        <a href="#">Test your fitness</a>
+        <a href="#">Donate us</a>
+        <a href="#">Across the Globe</a>
+      </div>
+    </div>
+    <a href="#">Donate Us</a>
+  </div>
+  <div class="login">
+    <a href="#">Login</a>
+    <a href="#">Register</a>
+  </div>
+</section>    
+
+    <h1 style="text-align: center;">Donations</h1>
+    <div id="container">
+      <div class="heart-btn">
+        <div class="content">
+          <span class="heart"></span>
+          <span class="text">Donate now</span>
+          <span class="numb"></span>
+        </div>
+      </div>
+  
+      <script>
+        $(document).ready(function(){
+          $('.content').click(function(){
+            $('.content').toggleClass("heart-active")
+            $('.text').toggleClass("heart-active")
+            $('.heart').toggleClass("heart-active")
+          });
+        });
+      </script>
+    </div>
+    <table style="width: max-content;" class="content-table">
+        <thead>
+          <tr>
+            <th>Sr No.</th>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Adi</td>
+            <td>₹2000</td>
+            <td>09-Oct-2021</td>
+          </tr>
+          <tr class="active-row">
+            <td>2</td>
+            <td>Sally</td>
+            <td>$100</td>
+            <td>3-Oct-2021</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Jay</td>
+            <td>$128</td>
+            <td>29-Sept-2021</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Tidxx</td>
+            <td>$92</td>
+            <td>24-Sept-2021</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Xytrn</td>
+            <td>$58</td>
+            <td>24-Sept-2021</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Urbssn</td>
+            <td>$300</td>
+            <td>21-Sept-2021</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Ejbfm</td>
+            <td>$43</td>
+            <td>16-Sept-2021</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Ayndz</td>
+            <td>$10</td>
+            <td>15-Sept-2021</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Ihdjs</td>
+            <td>₹6000</td>
+            <td>11-Sept-2021</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Pwtbs</td>
+            <td>$186</td>
+            <td>8-Sept-2021</td>
+          </tr>                                        
+        </tbody>
+      </table> 
+        
+</body>
+</html>

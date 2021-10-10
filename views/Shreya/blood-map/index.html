@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    
+  <head>
+    
+    <title>Across the Globe</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/blooddonarmap.css">
+    <script src="/js/boolddonarmap.js"></script>
+
+
+  </head>
+  
+  <body>
+    
+    <section class="sec">
+      <div class="icon">
+        <img src="../images/logo.png" alt="icon" style="height: 60px;">
+      </div>
+
+    <div class="navbar">
+      <a href="#">Home</a>
+      <div class="dropdown ">
+        <button class="dropbtn1" onmouseover="myFunction()">Banks<i class="fa fa-caret-down"></i></button>
+        <div class="content1" id="myDropdown">
+          <a href="#">Blood Bank</a>
+          <a href="#">Hospital</a>
+          <a href="#">Organ Bank</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" onmouseover="myFunction1()">Events and News<i class="fa fa-caret-down"></i></button>
+        <div class="content1" id="myDropdown1">
+          <a href="#">Register your camp</a>
+          <a href="#">Find camps near you</a>
+          <a href="#">News</a>
+        </div>
+      </div>
+  
+      <div class="dropdown">
+        <button class="dropbtn2" onmouseover="myFunction2()">More..<i class="fa fa-caret-down"></i></button>
+        <div class="content1" id="myDropdown2">
+          <a href="#">About Us</a>
+          <a href="#">Test your fitness</a>
+          <a href="#">Donate us</a>
+          <a href="#">Across the Globe</a>
+        </div>
+      </div>
+      <a href="#">Donate Us</a>
+    </div>
+    <div class="login">
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+    </div>
+  </section>
+  
+    <h2>Our blood donors across the Globe</h2>
+    <div id="container">
+    <ul>
+        <li>
+            <span class="blood group">A+</span>
+            <span class="name">Lakshay</span>
+            <span class="Phone number">89477*****</span>
+            <span class="state">India</span>  
+        </li>
+
+        <li>
+            <span class="blood group">OB-</span>
+            <span class="name">John</span>
+            <span class="Phone number">90087*****</span>
+            <span class="state">Goa</span>  
+        </li>
+
+        <li>
+            <span class="blood group">B+</span>
+            <span class="name">Justin</span>
+            <span class="Phone number">795********</span>
+            <span class="state">Russia</span>  
+        </li>
+
+        <li>
+            <span class="blood group">A-</span>
+            <span class="name">Louis</span>
+            <span class="Phone number">0967******</span>
+            <span class="state">France</span>  
+        </li>
+
+        <li>
+            <span class="blood group">B+</span>
+            <span class="name">Jay</span>
+            <span class="Phone number">9657******</span>
+            <span class="state">Mumbai</span>  
+        </li>
+
+        <li>
+            <span class="blood group">A+</span>
+            <span class="name">Yufghr</span>
+            <span class="Phone number">1437********</span>
+            <span class="state">Canada</span>  
+        </li>
+
+        <li>
+            <span class="blood group">O-</span>
+            <span class="name">Syxdd</span>
+            <span class="Phone number">9793******</span>
+            <span class="state">Delhi</span>  
+        </li>
+
+        <li>
+            <span class="blood group">B+</span>
+            <span class="name">Cdhys</span>
+            <span class="Phone number">8267******</span>
+            <span class="state">India</span>  
+        </li>
+
+        <li>
+            <span class="blood group">AB+</span>
+            <span class="name">Esha</span>
+            <span class="Phone number">9914******</span>
+            <span class="state">India</span>  
+        </li>
+    </ul>      
+    </div>
+    <div id="map"></div> 
+    <script>
+      var map;
+      function initMap() {
+        
+        map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat:28.704060, lng:77.102493},
+        zoom: 3
+        });
+      //call marker function
+      addMarker({lat:28.704060,lng:77.102493});
+      addMarker({lat:34.083672,lng:74.797279});
+      addMarker({lat:10.850516,lng:76.271080});
+      addMarker({lat:26.200603,lng:92.937576});
+      addMarker({lat:19.075983,lng:72.877655});
+      addMarker({lat:15.68065240058384,lng:74.13339088566516});
+      addMarker({lat:23.208689770749274,lng:88.47604438367257});
+      addMarker({lat:18.737699304791576,lng:73.87614705706629});
+      addMarker({lat:30.323710514809502,lng:78.03233559284553});
+      addMarker({lat:21.153379213773473,lng:72.80580570046818});
+      addMarker({lat:12.992630386778425,lng:80.20762687871768});
+      addMarker({lat:23.23405496141222,lng:77.4031339789709});
+      addMarker({lat:28.595086775084063,lng:77.36996715208859});
+      addMarker({lat:25.60554394801938,lng:85.11420117857872});
+      addMarker({lat:23.931100125760086,lng:85.85467759399464});
+      addMarker({lat:27.21831338454876,lng:72.8693794404384});
+      addMarker({lat:15.578630970786534,lng:79.56136423448602});
+      addMarker({lat:25.013807444780355,lng:93.64379877453463});
+      addMarker({lat:8.678012153556361,lng:80.50496224144091});
+      addMarker({lat:6.849307808324527,lng:81.08723762271433});
+      addMarker({lat:47.72401911683858,lng:76.15437680955503});
+      addMarker({lat:63.29681050648653,lng:-129.6459576087908});
+      addMarker({lat:46.77586869485322,lng:-98.7084581056594});
+      addMarker({lat:31.623302243482676,lng:-100.6420518246051});
+      addMarker({lat:55.55836789459684,lng:-96.42330189235992});
+      addMarker({lat:52.138775649775134,lng:-124.19673894630746});
+      addMarker({lat:22.39867961741216,lng:-102.39986429637393});
+      addMarker({lat:-21.812709650410675,lng:-60.03658355453494});
+      addMarker({lat:-2.4954785967489177,lng:-66.18892720572585});
+      addMarker({lat:23.85352909684667,lng:28.557165869549316});
+      addMarker({lat:47.7303389935824,lng:1.3110725571324555});
+      addMarker({lat:52.24653058337121,lng:-1.6772086448745631});
+      addMarker({lat:69.02449783362268,lng:26.975134678834795});
+      addMarker({lat:28.11834749095056,lng:64.59232157468774});
+      addMarker({lat:-28.95254990994164,lng:22.404822418799778});
+      addMarker({lat:67.79589630697667,lng:96.93607139683147});
+      addMarker({lat:2.249248618597699,lng:115.74466484475798});
+      addMarker({lat:66.63897172943575,lng:152.8345086653361});
+      addMarker({lat:71.95444617598004,lng:99.57279077074043})
+      addMarker({lat:64.07596581438432,lng:58.96732267288033})
+      addMarker({lat:19.443638719818196,lng:13.264198406890644})
+      addMarker({lat:27.340388369926078,lng:43.14701042696096})
+      addMarker({lat:16.43381129929124,lng:52.46341652733575})
+      addMarker({lat:39.476774787133316,lng:-2.907676477361405})
+      addMarker({lat:-40.87378044166404,lng:-67.41939449052788})
+      addMarker({lat:9.41420863041662,lng:-0.974083057666131})
+      addMarker({lat:20.272082337567344,lng:102.37274283013429})
+
+      //add marker function
+      function addMarker(coords){
+        var marker = new google.maps.Marker({
+        position:coords,
+        map:map,
+        });
+        }
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Dh1o0e6sdthQJ52Y0RGk0iFQVhgbq9M&callback=initMap&libraries=&v=weekly" async defer></script>
+ 
+  </body>
+
+</html>
