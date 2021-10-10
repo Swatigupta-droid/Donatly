@@ -58,7 +58,8 @@ Donatly. is a non-profit movement empowering the awareness for blood and organ d
     - Our pages contain a snatchbot-based chatbot, where automated responses work out a series of questions to fill respective data.
     
  ## Host Links and Other Resources
-    - YouTube Video - https://www.youtube.com/watch?v=qadNBfZ66j4    
+    - YouTube Video - https://youtu.be/upDw36NinEI
+    - DevPost Project - https://devpost.com/software/donately/joins/R1NrM6CtQpdmLs1eQzI3PQ
 
  ## Team Members
   - Abhinav Aggrawal
