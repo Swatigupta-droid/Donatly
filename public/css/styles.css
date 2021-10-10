@@ -51,6 +51,182 @@ html {
   font-family: 'Times New Roman', Times, serif;
 }
 
+/* **********start **************** */
+
+.head-item-1{
+  margin-top: 9%;
+  height: 100%;
+  width: 75%;
+  top: 0;
+  padding:3%;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  left: 0;
+}
+
+.head-item-1 h1{
+  font-size: 500%;
+  font-weight: bolder;
+  color: red;
+}
+
+.head-item-1 button{
+  background-color: red;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  font-weight: bolder;
+  padding: 1%;
+  margin:3%;
+  text-align: center;
+  width: 12rem;
+  font-size: large;
+}
+
+.head-item-1 button a{
+  color:black;
+ text-decoration: none;
+}
+
+.head-item-1 button a:hover{
+ color: whitesmoke;
+}
+
+.head-item-2{
+  height: 100%;
+  width: 25%;
+  top: 0;
+  background-color:red;
+  padding:3%;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  right: 0;
+}
+
+.head-item-img{
+  z-index: 10000;
+  height: 19rem;
+  width: 19rem;
+  border-radius: 100%;
+  position: fixed;
+  margin-top: 15%;
+  margin-left: 65%;
+}
+
+#choice-card{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#post-item{
+  margin-top: 2%;
+}
+
+
+.polaroid {
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.rotate_right {
+  float: left;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Safari */
+  transform: rotate(7deg);
+}
+
+.rotate_left {
+  float: left;
+  -ms-transform: rotate(-8deg); /* IE 9 */
+  -webkit-transform: rotate(-8deg); /* Safari */
+  transform: rotate(-8deg);
+}
+
+.single-post-head{
+  font-size: 3.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 1px 1px 2px black, 0 0 25px red;
+}
+
+.flex-container {
+  display: flex;
+  
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container > button {
+  background-color: #f7aa2d;
+  margin:0.3rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* ********************quiz page**************** */
+
+
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #00ff4c !important;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #e98425;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}
+
+#nav-title{
+  font-size: 24;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  
+}
+
+#nav-item{
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 
 
 .polaroid {

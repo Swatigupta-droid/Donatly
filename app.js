@@ -56,8 +56,8 @@ app.get("/map-organ",function(req,res){
   res.render("./shreya/organ-map/index")
 });
 
-app.get("/bank",function(req,res){
-  res.render("./shreya/bank/index")
+app.get("/banks",function(req,res){
+  res.render("./shreya/banks/index")
 });
 
 app.get("/events-news",function(req,res){
@@ -66,6 +66,10 @@ app.get("/events-news",function(req,res){
 
 app.get("/donations",function(req,res){
   res.render("./Donations/index")
+});
+
+app.get("/contact",function(req,res){
+  res.render("contact")
 });
 
 
